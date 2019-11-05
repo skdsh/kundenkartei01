@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "terminal.integrated.shell.windows": "cmd.exe",
+
+    "terminal.integrated.env.windows": {
+    "CMDER_ROOT": "[cmder_root]"
+    },
+    "terminal.integrated.shellArgs.windows": [
+      "/k",
+      "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"
+    ],
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+            
+        }
+    ]
+    
+        }
