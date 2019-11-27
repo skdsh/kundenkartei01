@@ -2,6 +2,10 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const bcrypt = require("bcrypt");
+
+app.get("/", (req, res) => {
+  res.render("index.ejs", { name: "kyle", title: "My Site", myCss: myCss });
+});
 const users = [];
 var myCss = {
   style: fs.readFileSync("./index.css", "utf8")
@@ -22,7 +26,7 @@ app.post("/register", async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(require.body.passport, 10);
     users.push({
-      id: Date.now().toString(),
+      id: req.body.username,
       name: req.body.name,
       email: require.body.email,
       password: hashedPassword

@@ -6,16 +6,29 @@
     "bcrypt": "^3.0.6",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "mysql": "^2.17.1",
+    "react-native-sqlite-storage": "^4.1.0",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^4.1.0"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
     "nodemon": "^1.19.4"
   },
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skdsh/kundenkartei01.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/skdsh/kundenkartei01/issues"
+  },
+  "homepage": "https://github.com/skdsh/kundenkartei01#readme",
   "description": ""
 }
